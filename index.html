@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h4 class="title mb-5">Body Mass Index (BMI) Calculator</h4>
+        
+        <div class="input-group mb-4 height">
+            <label for="">Enter your Height :</label>
+            <input type="number" 
+                class="form-control" 
+                onchange="getHeight(this.value)" 
+                min="1" id="height">
+            <span class="input-group-text">cm</span>
+        </div>
+        <div class="input-group mb-4 ">
+            <label class="form-floating">Enter your Weight :</label><br>
+            <input type="number" 
+                class="form-control"
+                id="weight"
+                min="1"
+                onchange="getWeight(this.value)">
+            <span class="input-group-text">Kg</span>
+        </div>
+        
+        <button 
+            onclick="handleClick()"
+            class="btn btn-primary mb-4">
+            Check BMI
+        </button>
+        <div class="alert "
+            id="alertBox" role="alert">
+                
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
