@@ -20,7 +20,7 @@ Underweight: BMI less than 18.5
 Normal weight: BMI between 18.5 and 24.9
 Overweight: BMI between 25.0 and 29.9
   
-##Code Explanation
+## Code Explanation
 -The getHeight() and getWeight() functions store the user's height and weight inputs, respectively.
 
 -The handleClick() function calculates the BMI using the formula BMI = weight / ((height / 100) * (height / 100)) and updates the alert box with the BMI category based on the calculated BMI value.
